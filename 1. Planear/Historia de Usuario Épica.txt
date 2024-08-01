@@ -1,0 +1,41 @@
+Historia de Usuario Épica
+Sistema de Información Transaccional
+
+1. Nombre del Proyecto: Stock Master
+
+2. Proceso: Venta
+
+3. Actores Involucrados: 
+  - Empleado: Persona encargada de registrar las ventas, consultar el estado del inventario, y realizar ajustes en el inventario. 
+  - Cliente: Persona que realiza compras en la tienda y recibe confirmaciones de compra y recibos.
+
+4. Producto/Servicio: Producto
+
+5. Requerimiento: La empresa necesita un sistema de información que le permita gestionar de manera eficiente y automática los productos ofrecidos, mejorando así el proceso de venta y la gestión del inventario.
+
+6. Problematica: El inventario se maneja de manera manual, lo que resulta en ineficiencias y errores humanos, estos errores incluyen registros duplicados, productos perdidos, discrepancias en el inventario y retrasos en la atención al cliente. Además, la falta de un sistema automatizado impide un control global del proceso y una adecuada fidelización de los clientes.
+
+7. Solución: Implementar un sistema de información transaccional que permita administrar de manera eficiente los productos ofrecidos,a través de una plataforma web qye gestione el inventario en tiempo real, registre ventas y genere reportes automatizados.
+
+8. Escenario Actual: La empresa maneja el inventario de manera manual, utilizando hojas de cálculo o libros de registro. Los empleados registran las ventas manualmente, actualizan el inventario y generan reportes de manera manual, lo que puede resultar en errores y pérdida de tiempo. Los empleados no tienen visibilidad en tiempo real del estado del inventario, lo que puede llevar a la no correcta notificación de la disponibilidad de estos.
+
+  Pasos: 
+    1. El cliente llega al establecimiento y pregunta por un producto
+    2. El empleado verifica y confirma la disponibilidad del producto
+    3. El cliente pregunta por el precio del producto
+    4. El empleado informa el precio y los medios de pago disponibles
+    5. El cliente realiza el pago del producto
+    6. El empleado registra manualmente la venta del producto
+    7. El empleado actualiza el inventario en hojas de cálculo o libros de registro
+
+9. Escenario Objetivo: Utilizar un sistema de información transaccional que permita controlar la globalidad del proceso de ventas y gestión de inventarios, mejorando la eficiencia operativa y la satisfacción del cliente. 
+
+  Pasos:
+    1. El cliente llega al establecimiento y pregunta por un producto
+    2. El empleado verifica y confirma la disponibilidad del producto
+    3. El cliente pregunta por el precio del producto
+    4. El empleado informa el precio y los medios de pago disponibles
+    5. El cliente realiza el pago del producto
+    6. El empleado registra la venta en el sistema, actualizando el inventario en tiempo real
+    7. El sistema envia notificaciones de stock bajo para reabastecimiento 
+
