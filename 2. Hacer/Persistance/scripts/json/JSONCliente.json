@@ -1,0 +1,53 @@
+[
+    {
+        "IdGenero": "383a343c-3445-4dbc-b507-2b8e95d26dcf",
+        "IdTipoDocumento": "bfb32396-16b2-47bb-a276-fe4d12134555",
+        "IdPersona": "ac0cd2d7-d33d-4176-86c6-74fdcd072ecc",
+        "IdCliente": "7d74b6f6-dc5e-4976-8252-cccaed902721",
+        "NombreGenero": "Masculino",
+        "NombreTipoDocumento": "Cédula de Ciudadanía",
+        "NombreCompleto": "Oscar Núñez",
+        "NumeroDocumento": "6677889922",
+        "Correo": "oscar.nunez@example.com",
+        "Telefono": "3045678901",
+        "FechaNacimiento": "1986-02-11",
+        "Usuario": "oscarnunez",
+        "Contrasena": "contrasena606",
+        "FechaRegistro": "2024-03-22",
+        "Direccion": "Calle 30 # 10-50"
+    },
+    {
+        "IdGenero": "cf02fec1-6933-43a4-8c6f-f43ae9372c53",
+        "IdTipoDocumento": "d3edb8ed-0f8a-4e49-8db4-77adbdedff12",
+        "IdPersona": "52ddf0ca-f3e2-40e5-93dd-9ba3def823b6",
+        "IdCliente": "7342fce4-0161-400b-b23b-6db1d0d7ac51",
+        "NombreGenero": "Femenino",
+        "NombreTipoDocumento": "Pasaporte",
+        "NombreCompleto": "Daniela Ríos",
+        "NumeroDocumento": "5544332211",
+        "Correo": "daniela.rios@example.com",
+        "Telefono": "3034567890",
+        "FechaNacimiento": "1993-09-05",
+        "Usuario": "danielarios",
+        "Contrasena": "contrasena505",
+        "FechaRegistro": "2024-02-15",
+        "Direccion": "Avenida 15 # 25-40"
+    },
+    {
+        "IdGenero": "ad8d2e97-952a-4869-ad93-5a548fbef6e8",
+        "IdTipoDocumento": "bfb32396-16b2-47bb-a276-fe4d12134555",
+        "IdPersona": "8ed10e30-6257-42c7-b9ae-bf430cdb5cdc",
+        "IdCliente": "02678cc1-fbd2-4798-836c-54f7c74f3d1c",
+        "NombreGenero": "No Binario",
+        "NombreTipoDocumento": "Cédula de Ciudadanía",
+        "NombreCompleto": "Sam Torres",
+        "NumeroDocumento": "4455667788",
+        "Correo": "sam.torres@example.com",
+        "Telefono": "3023456789",
+        "FechaNacimiento": "1995-03-25",
+        "Usuario": "samtorres",
+        "Contrasena": "contrasena404",
+        "FechaRegistro": "2024-01-01",
+        "Direccion": "Carrera 10 # 20-30"
+    }
+]

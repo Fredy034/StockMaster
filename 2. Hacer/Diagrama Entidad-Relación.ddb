@@ -1,7 +1,7 @@
 {
   "author": "Unnamed",
   "title": "Diagrama Entidad-Relación",
-  "date": "2024-08-22T20:11:25.849Z",
+  "date": "2024-09-03T16:14:42.328Z",
   "tables": [
     {
       "id": 0,
@@ -39,7 +39,7 @@
         {
           "name": "Activo",
           "type": "BIT",
-          "default": "",
+          "default": "'1'",
           "check": "",
           "primary": false,
           "unique": false,
@@ -52,7 +52,7 @@
         {
           "name": "Actualiza",
           "type": "TIMESTAMP",
-          "default": "",
+          "default": "CURRENT_TIMESTAMP",
           "check": "",
           "primary": false,
           "unique": false,

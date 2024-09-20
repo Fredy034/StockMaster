@@ -1,0 +1,46 @@
+[
+    {
+        "IdCategoriaProducto": "62e89e62-c8c8-4dbb-b03b-c8713d4d6465",
+        "NombreCategoriaProducto": "Abarrotes",
+        "IdTipoProducto": "bf1ce38e-160c-40d7-8a0b-47ba76694e29",
+        "NombreTipoProducto": "Arroz",
+        "IdProducto": "b3f1fbca-1496-4b98-a393-edd3a394a45a",
+        "NombreProducto": "Arroz Extra",
+        "DescripcionProducto": "Paquete de arroz extra largo",
+        "PrecioProducto": 25,
+        "StockProducto": 100
+    },
+    {
+        "IdCategoriaProducto": "62e89e62-c8c8-4dbb-b03b-c8713d4d6465",
+        "NombreCategoriaProducto": "Abarrotes",
+        "IdTipoProducto": "19385729-588b-4fd4-bbb5-f3992146645b",
+        "NombreTipoProducto": "Aceite",
+        "IdProducto": "46dcb447-912f-4b16-be88-4d1b84bf9920",
+        "NombreProducto": "Aceite Vegetal",
+        "DescripcionProducto": "Botella de aceite vegetal de 1 litro",
+        "PrecioProducto": 10,
+        "StockProducto": 50
+    },
+    {
+        "IdCategoriaProducto": "5e11ba5b-1196-4e97-bd0d-14a68fa75045",
+        "NombreCategoriaProducto": "Lácteos",
+        "IdTipoProducto": "df83de77-3e51-466e-ba07-7d52d78bdf6e",
+        "NombreTipoProducto": "Leche",
+        "IdProducto": "0ca3ad62-8db3-4b8a-9864-1f71f387351e",
+        "NombreProducto": "Leche Entera",
+        "DescripcionProducto": "Litro de leche entera",
+        "PrecioProducto": 2.5,
+        "StockProducto": 200
+    },
+    {
+        "IdCategoriaProducto": "6ef359f6-76ee-45e8-9098-f40c2c9f124f",
+        "NombreCategoriaProducto": "Panadería",
+        "IdTipoProducto": "cc4406f4-7394-464f-9443-7b969415a9af",
+        "NombreTipoProducto": "Pan de Molde",
+        "IdProducto": "48b0cbcc-5417-417c-a590-57a2932385d8",
+        "NombreProducto": "Pan de Molde Integral",
+        "DescripcionProducto": "Paquete de pan de molde integral",
+        "PrecioProducto": 3,
+        "StockProducto": 80
+    }
+]

@@ -1,10 +1,8 @@
 CREATE OR REPLACE FUNCTION "IngresarGenero"(P_Nombre VARCHAR)
-RETURNS TABLE ("IdGenero" UUID, "Nombre" VARCHAR, "Activo" BIT, "Actualiza" TIMESTAMP) 
+RETURNS VOID
 AS $$
 BEGIN
-    RETURN QUERY 
     INSERT INTO "Genero" ("Nombre") 
-    VALUES (P_Nombre)
-    RETURNING "IdGenero", "Nombre", "Activo", "Actualiza";
+    VALUES (P_Nombre);
 END;
 $$ LANGUAGE plpgsql;

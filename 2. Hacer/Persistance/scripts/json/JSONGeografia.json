@@ -1,0 +1,26 @@
+[
+    {
+        "IdPais": "9ecae1dd-3414-429c-96c5-1a70d14f122d",
+        "IdDepartamento": "08387c74-e08c-4ee5-a0d9-d943561febda",
+        "IdCiudad": "f456d83e-0413-4446-b619-a12f9358202c",
+        "NombrePais": "Colombia",
+        "NombreDepartamento": "Antioquia",
+        "NombreCiudad": "Medellín"
+    },
+    {
+        "IdPais": "9ecae1dd-3414-429c-96c5-1a70d14f122d",
+        "IdDepartamento": "2761fe4b-616a-478f-88c6-c5f67d07d8c9",
+        "IdCiudad": "1e90a008-93b8-46fc-8404-04200ed45914",
+        "NombrePais": "Colombia",
+        "NombreDepartamento": "Cundinamarca",
+        "NombreCiudad": "Bogotá"
+    },
+    {
+        "IdPais": "9ecae1dd-3414-429c-96c5-1a70d14f122d",
+        "IdDepartamento": "3e84935d-324d-4c3b-bee5-6ca6df1a4f13",
+        "IdCiudad": "27d8f635-7e2e-453d-80b2-c1cb53c5da1b",
+        "NombrePais": "Colombia",
+        "NombreDepartamento": "Valle del Cauca",
+        "NombreCiudad": "Cali"
+    }
+]

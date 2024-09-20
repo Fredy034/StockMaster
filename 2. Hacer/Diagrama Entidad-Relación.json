@@ -36,7 +36,7 @@
         {
           "name": "Activo",
           "type": "BIT",
-          "default": "",
+          "default": "'1'",
           "check": "",
           "primary": false,
           "unique": false,
@@ -49,7 +49,7 @@
         {
           "name": "Actualiza",
           "type": "TIMESTAMP",
-          "default": "",
+          "default": "CURRENT_TIMESTAMP",
           "check": "",
           "primary": false,
           "unique": false,

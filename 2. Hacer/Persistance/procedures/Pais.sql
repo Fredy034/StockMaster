@@ -27,40 +27,45 @@ $$ LANGUAGE plpgsql;
 -- SELECT * FROM "IngresarPais"('Venezuela');
 
 CREATE OR REPLACE FUNCTION "IngresarPais"(P_Nombre VARCHAR)
-RETURNS TABLE ("IdPais" UUID, "Nombre" VARCHAR, "Activo" BIT, "Actualiza" TIMESTAMP) 
+RETURNS VOID
 AS $$
 BEGIN
-    RETURN QUERY 
     INSERT INTO "Pais" ("Nombre") 
-	VALUES (P_Nombre)
-	RETURNING "Pais"."IdPais", "Pais"."Nombre", "Pais"."Activo", "Pais"."Actualiza";
+	VALUES (P_Nombre);
 END;
 $$ LANGUAGE plpgsql;
 
 -- SELECT * FROM "ActualizarPais"('c3a5b128-fadc-455c-b57b-675276c2faba', 'Ecuador');
 
 CREATE OR REPLACE FUNCTION "ActualizarPais"(P_IdPais UUID, P_Nombre VARCHAR)
-RETURNS TABLE ("IdPais" UUID, "Nombre" VARCHAR, "Activo" BIT, "Actualiza" TIMESTAMP) 
+RETURNS VOID
 AS $$
 BEGIN
-    RETURN QUERY 
 	UPDATE "Pais" 
     SET "Nombre" = P_Nombre, "Actualiza" = CURRENT_TIMESTAMP
-	WHERE "Pais"."IdPais" = P_IdPais AND "Pais"."Activo" = '1'
-	RETURNING "Pais"."IdPais", "Pais"."Nombre", "Pais"."Activo", "Pais"."Actualiza";
+	WHERE "Pais"."IdPais" = P_IdPais AND "Pais"."Activo" = '1';
 END;
 $$ LANGUAGE plpgsql;
 
 -- SELECT * FROM "EliminarPais"('c3a5b128-fadc-455c-b57b-675276c2faba');
 
 CREATE OR REPLACE FUNCTION "EliminarPais"(P_IdPais UUID)
-RETURNS TABLE ("IdPais" UUID, "Nombre" VARCHAR, "Activo" BIT, "Actualiza" TIMESTAMP) 
+RETURNS VOID
 AS $$
 BEGIN
-    RETURN QUERY 
 	UPDATE "Pais" 
     SET "Activo" = '0', "Actualiza" = CURRENT_TIMESTAMP
-	WHERE "Pais"."IdPais" = P_IdPais AND "Pais"."Activo" = '1'
-	RETURNING "Pais"."IdPais", "Pais"."Nombre", "Pais"."Activo", "Pais"."Actualiza";
+	WHERE "Pais"."IdPais" = P_IdPais AND "Pais"."Activo" = '1';
+END;
+$$ LANGUAGE plpgsql;
+
+-- SELECT * FROM "EliminarPaisFisico"('c3a5b128-fadc-455c-b57b-675276c2faba');
+
+CREATE OR REPLACE FUNCTION "EliminarPaisFisico"(P_IdPais UUID)
+RETURNS VOID
+AS $$
+BEGIN
+	DELETE FROM "Pais"
+	WHERE "IdPais" = P_IdPais AND "Activo" = '1';
 END;
 $$ LANGUAGE plpgsql;
