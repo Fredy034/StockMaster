@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+*.zip
+/2. Hacer/*.zip
+
 # dependencies
 /2. Hacer/StockMaster_Backend/node_modules/
 /2. Hacer/StockMaster_Frontend/front_stockmaster_project/node_modules/
