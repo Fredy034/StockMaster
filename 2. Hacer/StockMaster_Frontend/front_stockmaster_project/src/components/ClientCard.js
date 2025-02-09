@@ -1,18 +1,37 @@
 import { useEffect, useState } from 'react';
 
-const ClientCard = ({ keyword }) => {
+const ClientCard = ({ keyword, urlType, parameter }) => {
   const [clientInfo, setClientInfo] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const uriAPI =
-    keyword === 'gender'
-      ? 'http://localhost:8068/getgenders'
-      : keyword === 'documenttype'
-      ? 'http://localhost:8068/getdocumenttypes'
-      : keyword === 'people'
-      ? 'http://localhost:8068/getpeople'
-      : 'http://localhost:8068/getclients';
+  const uriAPI = (() => {
+    if (urlType && parameter) {
+      return keyword === 'gender' && urlType === 'id'
+        ? `http://localhost:8068/getgenderbyid/${parameter}`
+        : keyword === 'gender' && urlType === 'name'
+        ? `http://localhost:8068/getgenderbyname/${parameter}`
+        : keyword === 'documenttype' && urlType === 'id'
+        ? `http://localhost:8068/getdocumenttypebyid/${parameter}`
+        : keyword === 'documenttype' && urlType === 'name'
+        ? `http://localhost:8068/getdocumenttypebyname/${parameter}`
+        : keyword === 'people' && urlType === 'id'
+        ? `http://localhost:8068/getpersonbyid/${parameter}`
+        : keyword === 'people' && urlType === 'name'
+        ? `http://localhost:8068/getpersonbyname/${parameter}`
+        : keyword === 'client' && urlType === 'id'
+        ? `http://localhost:8068/getclientbyid/${parameter}`
+        : `http://localhost:8068/getclientbyname/${parameter}`;
+    } else {
+      return keyword === 'gender'
+        ? 'http://localhost:8068/getgenders'
+        : keyword === 'documenttype'
+        ? 'http://localhost:8068/getdocumenttypes'
+        : keyword === 'people'
+        ? 'http://localhost:8068/getpeople'
+        : 'http://localhost:8068/getclients';
+    }
+  })();
 
   const keywordTitle =
     keyword === 'gender'
@@ -70,8 +89,8 @@ const ClientCard = ({ keyword }) => {
 
   return (
     <div className='card-container'>
-      {clientInfo.map((client) => (
-        <div key={client.id} className='product-card'>
+      {clientInfo.map((client, index) => (
+        <div key={index} className='product-card'>
           {keyword === 'gender' && (
             <>
               <p>

@@ -25,6 +25,12 @@ main {
   min-width: 90vw;
   margin: 40px 0;
 }
+.section-container {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  gap: 20px;
+}
 .section-header {
   width: 85%;
   display: flex;

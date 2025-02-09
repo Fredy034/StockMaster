@@ -56,7 +56,7 @@ router.get('/getgenderbyid/:idgenero', async (req, res) => {
   const coregenero = new CoreGenero();
   try {
     const resultCoreGenero = await coregenero.getGenderById(idgenero);
-    res.status(200).json({ msg: 'Genero encontrado', gender: resultCoreGenero });
+    res.status(200).json({ msg: 'Genero encontrado', genders: resultCoreGenero });
   } catch (err) {
     res.status(500).json({ error: err.message });
     console.error(err);
@@ -90,7 +90,7 @@ router.get('/getgenderbyname/:nombregenero', async (req, res) => {
   const coregenero = new CoreGenero();
   try {
     const resultCoreGenero = await coregenero.getGenderByName(nombregenero);
-    res.status(200).json({ msg: 'Genero encontrado', gender: resultCoreGenero });
+    res.status(200).json({ msg: 'Genero encontrado', genders: resultCoreGenero });
   } catch (err) {
     res.status(500).json({ error: err.message });
     console.error(err);
@@ -147,7 +147,7 @@ router.get('/getdocumenttypebyid/:idtipodocumento', async (req, res) => {
   const coretipodocumento = new CoreTipoDocumento();
   try {
     const resultCoreTipoDocumento = await coretipodocumento.getDocumentTypeById(idtipodocumento);
-    res.status(200).json({ msg: 'Tipo de Documento encontrado', document: resultCoreTipoDocumento });
+    res.status(200).json({ msg: 'Tipo de Documento encontrado', documents: resultCoreTipoDocumento });
   } catch (err) {
     res.status(500).json({ error: err.message });
     console.error(err);
@@ -181,7 +181,7 @@ router.get('/getdocumenttypebyname/:nombretipodocumento', async (req, res) => {
   const coretipodocumento = new CoreTipoDocumento();
   try {
     const resultCoreTipoDocumento = await coretipodocumento.getDocumentTypeByName(nombretipodocumento);
-    res.status(200).json({ msg: 'Departamento encontrado', department: resultCoreTipoDocumento });
+    res.status(200).json({ msg: 'Departamento encontrado', documents: resultCoreTipoDocumento });
   } catch (err) {
     res.status(500).json({ error: err.message });
     console.error(err);
@@ -238,7 +238,7 @@ router.get('/getpersonbyid/:idpersona', async (req, res) => {
   const corepersona = new CorePersona();
   try {
     const resultCorePersona = await corepersona.getPersonById(idpersona);
-    res.status(200).json({ msg: 'Persona encontrada', person: resultCorePersona });
+    res.status(200).json({ msg: 'Persona encontrada', people: resultCorePersona });
   } catch (err) {
     res.status(500).json({ error: err.message });
     console.error(err);
@@ -272,7 +272,7 @@ router.get('/getpersonbyname/:nombrepersona', async (req, res) => {
   const corepersona = new CorePersona();
   try {
     const resultCorePersona = await corepersona.getPersonByName(nombrepersona);
-    res.status(200).json({ msg: 'Persona encontrada', person: resultCorePersona });
+    res.status(200).json({ msg: 'Persona encontrada', people: resultCorePersona });
   } catch (err) {
     res.status(500).json({ error: err.message });
     console.error(err);
@@ -329,7 +329,7 @@ router.get('/getclientbyid/:idcliente', async (req, res) => {
   const corecliente = new CoreCliente();
   try {
     const resultCoreCliente = await corecliente.getClientById(idcliente);
-    res.status(200).json({ msg: 'Cliente encontrado', client: resultCoreCliente });
+    res.status(200).json({ msg: 'Cliente encontrado', clients: resultCoreCliente });
   } catch (err) {
     res.status(500).json({ error: err.message });
     console.error(err);
@@ -363,7 +363,7 @@ router.get('/getclientbyname/:direccioncliente', async (req, res) => {
   const corecliente = new CoreCliente();
   try {
     const resultCoreCliente = await corecliente.getClientByName(direccioncliente);
-    res.status(200).json({ msg: 'Cliente encontrado', client: resultCoreCliente });
+    res.status(200).json({ msg: 'Cliente encontrado', clients: resultCoreCliente });
   } catch (err) {
     res.status(500).json({ error: err.message });
     console.error(err);
